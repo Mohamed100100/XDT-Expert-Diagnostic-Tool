@@ -1,311 +1,344 @@
-# XDT — eXpert Diagnostic Tool
+<div align="center">
 
-> **Unified Diagnostic Services (UDS) Tester Tool**  
-> *A Professional-Grade Automotive Diagnostic Platform*
+<img src="images/logo-xdt.png" width="220"/>
+
+# 🚗 XDT — eXpert Diagnostic Tool
+
+### Professional Automotive Diagnostic Platform
+
+**Unified Diagnostic Services (UDS) Tester Tool**
+
+*Designed for ECU Diagnostics, Firmware Flashing, Vehicle Validation, and Automotive Development*
+
+<br>
+
+![Java](https://img.shields.io/badge/Java-17+-orange?style=for-the-badge\&logo=openjdk)
+![JavaFX](https://img.shields.io/badge/JavaFX-GUI-blue?style=for-the-badge)
+![UDS](https://img.shields.io/badge/ISO14229-UDS-success?style=for-the-badge)
+![DoCAN](https://img.shields.io/badge/ISO15765-DoCAN-red?style=for-the-badge)
+![Documentation](https://img.shields.io/badge/Documentation-Complete-brightgreen?style=for-the-badge)
+
+### 🔧 One Tool. All ECUs.
+
+</div>
+
+---
+
+<div align="center">
+
+<table>
+<tr>
+
+<td align="center">
+<img src="images/logo-cairo-university.png" width="180"><br>
+<b>Cairo University</b>
+</td>
+
+<td align="center">
+<img src="images/logo-faculty-of-engineering.png" width="140"><br>
+<b>Faculty of Engineering</b>
+</td>
+
+<td align="center">
+<img src="images/Simenslogo.png" width="180"><br>
+<b>Siemens DISW</b>
+</td>
+
+</tr>
+</table>
+
+</div>
+
+---
+
+# 📋 Project Overview
+
+**XDT (eXpert Diagnostic Tool)** is a professional desktop application developed for off-board automotive diagnostics using the Unified Diagnostic Services (UDS) protocol over Diagnostic Communication over CAN (DoCAN).
+
+The project was developed as a Graduation Project at Cairo University – Faculty of Engineering – Electronics and Electrical Communications Department under the sponsorship of Siemens Digital Industries Software (DISW).
+
+This repository contains the complete technical documentation of the project.
+
+> ⚠️ Source code is proprietary and not publicly available.
+
+---
+
+# 🌟 Why XDT?
+
+Modern vehicles contain dozens of Electronic Control Units (ECUs) requiring standardized diagnostic communication for development, validation, maintenance, and software updates.
+
+XDT provides a complete diagnostic ecosystem that enables engineers to:
+
+* 🚗 Communicate with ECUs using ISO-standardized UDS services
+* 🔐 Perform Security Access authentication
+* 📊 Monitor vehicle data in real time
+* 🛠 Flash ECU firmware
+* 🧪 Automate ECU testing procedures
+* 📈 Analyze communication logs
+* 🤖 Receive AI-assisted diagnostic guidance
+
+---
+
+# ✨ Highlights
+
+| Feature                     | Description                       |
+| --------------------------- | --------------------------------- |
+| 🚗 UDS Diagnostics          | Full ISO 14229 implementation     |
+| 🌐 DoCAN Support            | Complete ISO 15765-2 stack        |
+| ⚡ Full Duplex Communication | Simultaneous TX/RX                |
+| 🔧 ECU Flashing             | S19 & VBF support                 |
+| 🧩 XML Configuration        | OEM adaptable                     |
+| 🤖 AI Copilot               | Intelligent diagnostic assistance |
+| 📊 Advanced Logging         | Structured reports                |
+| 🚀 Multi-ECU Support        | Parallel communication            |
+
+---
+
+# 📈 Project Metrics
+
+| Metric                 | Value        |
+| ---------------------- | ------------ |
+| Programming Language   | Java         |
+| GUI Framework          | JavaFX       |
+| ISO Standards          | 5            |
+| UDS Services Supported | 20+          |
+| ECU Support            | Multi-ECU    |
+| Team Members           | 7            |
+| Development Duration   | 8 Months     |
+| Sponsor                | Siemens DISW |
+
+---
+
+# 🖥️ Application Screenshots
+
+<div align="center">
+
+| Dashboard                                     | Diagnostic Console                                     |
+| --------------------------------------------- | ------------------------------------------------------ |
+| <img src="images/dashboard.png" width="450"/> | <img src="images/diagnostic-console.png" width="450"/> |
+
+| ECU Configuration                              | Flashing Manager                             |
+| ---------------------------------------------- | -------------------------------------------- |
+| <img src="images/ecu-config.png" width="450"/> | <img src="images/flashing.png" width="450"/> |
+
+</div>
+
+> Replace placeholders with actual screenshots.
+
+---
+
+# 🏗️ System Architecture
 
 <p align="center">
-  <img src="images/logo-xdt.png" alt="XDT Logo" width="500"/>
+<img src="images/system-architecture.png" width="900"/>
 </p>
 
+XDT follows a layered architecture inspired by the OSI model.
 
-<p align="left">
-  <img src="images/logo-cairo-university.png" alt="Cairo University" width="300"/>
-  &nbsp;&nbsp;&nbsp;
-
-</p>
-
-<p align="right">
-  <img src="images/logo-faculty-of-engineering.png" alt="Faculty of Engineering" width="150"/>
-</p>
-
-<p align="center">
-  <img src="images/Simenslogo.png" alt="Simenslogo.png" width="300"/>
-
-</p>
-
-
----
-
-## 📋 Project Overview
-
-**XDT (eXpert Diagnostic Tool)** is a comprehensive desktop application designed for **off-board automotive diagnostics** using the **Unified Diagnostic Services (UDS)** protocol over **Diagnostic Communication over CAN (DoCAN)**. Developed as a graduation project at **Cairo University, Faculty of Engineering, Electronics and Electrical Communications Department**, and sponsored by **Siemens Digital Industries Software (DISW)**.
-
-This repository contains the **complete technical documentation** for the XDT project. The source code is **closed-source** and proprietary.
-
----
-
-## 🎯 Project Goals
-
-- **Universal ECU Communication**: Speak the standardized diagnostic language of modern vehicles
-- **Modular & Scalable Architecture**: Built on OSI model layers for maintainability and extensibility
-- **OEM Adaptability**: One tool configurable for any vehicle brand or ECU configuration
-- **Professional-Grade GUI**: Modern, intuitive interface with real-time feedback and simplified workflows
-- **Full-Duplex Multi-ECU Support**: Handle simultaneous communication with multiple ECUs
-- **Intelligent Assistance**: AI-powered copilot for diagnostic guidance and troubleshooting
-
----
-
-## 🏗️ System Architecture
-
-XDT follows a **layered architecture based on the OSI model**, ensuring clear separation of concerns and modular development:
-
-```
-┌─────────────────────────────────────┐
-│  Front End: GUI (JavaFX)            │  ← Chapter 8
-│  - Modern, responsive interface       │
-│  - Real-time visual feedback          │
-│  - Multi-scene navigation             │
-├─────────────────────────────────────┤
-│  Back End:                            │
-│  ┌───────────────────────────────┐  │
-│  │ Application Layer (ISO 14229-1)│  │  ← Chapter 3
-│  │ - UDS Services Implementation   │  │
-│  │ - Service ID (SID) management   │  │
-│  │ - Request/Response handling     │  │
-│  ├───────────────────────────────┤  │
-│  │ Session Layer (ISO 14229-2)     │  │  ← Chapter 4
-│  │ - Timing parameter management   │  │
-│  │ - P2/P2*/P3/S3 timer handling   │  │
-│  │ - Session keep-alive mechanisms │  │
-│  ├───────────────────────────────┤  │
-│  │ Network/Transport Layer         │  │  ← Chapter 5
-│  │ (ISO 15765-2 - DoCAN)           │  │
-│  │ - Segmentation & Reassembly     │  │
-│  │ - Flow Control (FC) management  │  │
-│  │ - Single/Multi-frame handling   │  │
-│  ├───────────────────────────────┤  │
-│  │ Data Link Layer (CAN)           │  │  ← Chapter 6
-│  │ - USB-to-CAN bridge integration │  │
-│  │ - Py4J Java-Python gateway      │  │
-│  │ - Frame transmission/reception  │  │
-│  └───────────────────────────────┘  │
-└─────────────────────────────────────┘
-              │
-              ▼
-        ┌──────────┐
-        │   ECU    │
-        │  (CAN)   │
-        └──────────┘
+```text
+GUI (JavaFX)
+      │
+Application Layer (ISO 14229-1)
+      │
+Session Layer (ISO 14229-2)
+      │
+Network/Transport Layer (ISO 15765-2)
+      │
+CAN Data Link Layer
+      │
+USB-to-CAN Interface
+      │
+ECU
 ```
 
 ---
 
-## 📂 Repository Structure
+# 📂 Repository Structure
 
-```
+```text
 XDT-Documentation/
-├── README.md                          ← You are here (Main Overview)
-├── images/                            ← All figures, diagrams, screenshots, and logos
-│   ├── logo-xdt.png                   ← XDT project logo
-│   ├── logo-cairo-university.png      ← Cairo University logo
-│   ├── logo-faculty-of-engineering.png← Faculty of Engineering logo
-│   ├── figure-01-vehicle-architecture.png
-│   ├── figure-02-tool-setup.png
-│   ├── figure-03-target-audience.png
-│   └── ... (all project figures)
 │
-├── 01-Introduction/                   ← Chapter 1: Project Introduction
-│   └── README.md
+├── README.md
+├── images/
 │
-├── 02-Project-Overview/              ← Chapter 2: High-Level Architecture
-│   └── README.md
-│
-├── 03-Application-Layer/             ← Chapter 3: UDS Services (ISO 14229-1)
-│   └── README.md
-│
-├── 04-Session-Layer/                ← Chapter 4: Timing & Session Management (ISO 14229-2)
-│   └── README.md
-│
-├── 05-Network-Transport-Layer-DoCAN/  ← Chapter 5: DoCAN Protocol (ISO 15765-2)
-│   └── README.md
-│
-├── 06-Data-Link-Layer/              ← Chapter 6: CAN Integration & Hardware Bridge
-│   └── README.md
-│
-├── 07-File-Parsing/                 ← Chapter 7: Firmware File Formats (S19, VBF)
-│   └── README.md
-│
-├── 08-Graphical-User-Interface/     ← Chapter 8: GUI Design & Implementation
-│   └── README.md
-│
-├── 09-Main-Features/                ← Chapter 9: Core Tool Features
-│   └── README.md
-│
-├── 10-Challenges-and-Solutions/     ← Chapter 10: Development Challenges
-│   └── README.md
-│
-├── 11-Future-Work/                  ← Chapter 11: Roadmap & Enhancements
-│   └── README.md
-│
-└── 12-Appendix/                     ← Appendix: References, Acronyms, Standards
-    └── README.md
+├── 01-Introduction/
+├── 02-Project-Overview/
+├── 03-Application-Layer/
+├── 04-Session-Layer/
+├── 05-Network-Transport-Layer-DoCAN/
+├── 06-Data-Link-Layer/
+├── 07-File-Parsing/
+├── 08-Graphical-User-Interface/
+├── 09-Main-Features/
+├── 10-Challenges-and-Solutions/
+├── 11-Future-Work/
+└── 12-Appendix/
 ```
 
 ---
 
-## 🎓 Academic Information
+# 🚀 Supported Diagnostic Services
 
-| Field            | Details                                    |
-| ---------------- | ------------------------------------------ |
-| **University**   | Cairo University                           |
-| **Faculty**      | Faculty of Engineering                     |
-| **Department**   | Electronics and Electrical Communications  |
-| **Project Type** | Graduation Project (June 2025)             |
-| **Sponsor**      | Siemens Digital Industries Software (DISW) |
-| **Supervisor**   | Prof. Neamat Abdel Kader                   |
-| **Mentor**       | Eng. Islam Gamal                           |
-
-### Team Members
-
-- Karim Ayman Refaat
-- Gomaa Mohamed Gamal
-- Mohamed Ahmed Mohamed Ahmed
-- Mohamed Shawky
-- Janna Wael Ali Ali
-- Sohaila Mohamed Nasr
-- Reem Mohy Eldin Abdelrahman
+| Service                          | SID  |
+| -------------------------------- | ---- |
+| Diagnostic Session Control       | 0x10 |
+| ECU Reset                        | 0x11 |
+| Security Access                  | 0x27 |
+| Communication Control            | 0x28 |
+| Tester Present                   | 0x3E |
+| Read Data By Identifier          | 0x22 |
+| Read Data By Periodic Identifier | 0x2A |
+| Dynamically Define DID           | 0x2C |
+| Write Data By Identifier         | 0x2E |
+| Read DTC Information             | 0x19 |
+| Routine Control                  | 0x31 |
+| Request Download                 | 0x34 |
+| Request Upload                   | 0x35 |
+| Transfer Data                    | 0x36 |
+| Request Transfer Exit            | 0x37 |
 
 ---
 
-## 📜 Standards & Compliance
+# 🔥 Advanced Features
 
-XDT is built in strict compliance with international automotive standards:
+### Firmware Flashing
 
-| Standard        | Description                                           | Layer             |
-| --------------- | ----------------------------------------------------- | ----------------- |
-| **ISO 14229-1** | Unified Diagnostic Services (UDS) — Application Layer | Application       |
-| **ISO 14229-2** | UDS — Session Layer Services                          | Session           |
-| **ISO 15765-2** | Diagnostic Communication over CAN (DoCAN)             | Transport/Network |
-| **ISO 11898-1** | CAN Data Link Layer and Physical Signaling            | Data Link         |
-| **ISO 11898-2** | CAN High-Speed Medium Access Unit                     | Physical          |
+* S19 Support
+* VBF Support
+* Download Workflow
+* Upload Workflow
 
----
+### ECU Testing Framework
 
-## 🖼️ Visual Documentation
+* Automated Test Cases
+* Pass/Fail Reports
+* Regression Testing
 
-All diagrams, figures, screenshots, and architectural illustrations referenced throughout this documentation are located in the **`images/`** directory. Each section's README references the relevant figures by filename.
+### XML Configuration Engine
 
-### Logos
+* OEM Adaptability
+* ECU Profiles
+* Service Definitions
 
-| Logo                                                         | Filename                          | Description                                   |
-| ------------------------------------------------------------ | --------------------------------- | --------------------------------------------- |
-| <img src="images/logo-xdt.png" width="100"/>                 | `logo-xdt.png`                    | XDT — eXpert Diagnostic Tool project logo     |
-| <img src="images/logo-cairo-university.png" width="100"/>    | `logo-cairo-university.png`       | Cairo University official logo                |
-| <img src="images/logo-faculty-of-engineering.png" width="100"/> | `logo-faculty-of-engineering.png` | Faculty of Engineering, Cairo University logo |
+### AI Copilot
 
-> **Note**: Place all image files in the `images/` directory and update the references in each section's README accordingly.
+* Diagnostic Guidance
+* Error Explanation
+* Service Recommendations
 
----
+### Logging System
 
-## 🔧 Technology Stack
-
-| Component                | Technology                     |
-| ------------------------ | ------------------------------ |
-| **Programming Language** | Java                           |
-| **GUI Framework**        | JavaFX                         |
-| **UI Markup**            | FXML                           |
-| **UI Design Tool**       | SceneBuilder                   |
-| **Styling**              | CSS                            |
-| **IDE**                  | Eclipse                        |
-| **CAN Bridge**           | Python (Py4J Gateway)          |
-| **CAN Library**          | Open-source Python CAN library |
-| **Project Management**   | Jira, Bitbucket, Git           |
-| **Build Tool**           | Maven/Gradle                   |
+* Structured Logs
+* Session Tracking
+* Diagnostic Reports
 
 ---
 
-## 🚀 Key Capabilities
+# 📜 Standards Compliance
 
-### Diagnostic Services
-
-- ✅ **Diagnostic Session Control** (0x10) — Default, Programming, Extended, Safety sessions
-- ✅ **ECU Reset** (0x11) — Hard, Soft, Key-Off-On, Rapid Power Shutdown
-- ✅ **Security Access** (0x27) — Seed-Key challenge-response with multiple levels
-- ✅ **Tester Present** (0x3E) — Session keep-alive with configurable timing
-- ✅ **Read Data By Identifier** (0x22) — Read DIDs (VIN, Speed, DTCs, etc.)
-- ✅ **Read Data By Periodic Identifier** (0x2A) — Continuous data monitoring
-- ✅ **Dynamically Define Data Identifier** (0x2C) — Custom DID composition
-- ✅ **Write Data By Identifier** (0x2E) — Write configuration and calibration data
-- ✅ **Read DTC Information** (0x19) — All 27 sub-functions supported
-- ✅ **Routine Control** (0x31) — Start, stop, and request routine results
-- ✅ **Request Download** (0x34) — Initiate firmware flashing
-- ✅ **Request Upload** (0x35) — Memory content extraction
-- ✅ **Transfer Data** (0x36) — Block-based data transfer
-- ✅ **Request Transfer Exit** (0x37) — Finalize transfer sessions
-
-### Advanced Features
-
-- 🔧 **Software Download/Upload** — S19 and VBF file parsing and flashing
-- 🔧 **Sequence Automation** — Create, save, and execute multi-service sequences
-- 🔧 **ECU Testing System** — Automated test cases with pass/fail reporting
-- 🔧 **XML Configuration** — OEM-adaptable service definitions without code changes
-- 🔧 **AI Copilot** — Intelligent diagnostic assistance and code suggestions
-- 🔧 **Advanced Logging** — Multi-level logging with structured folder hierarchy
-- 🔧 **Multi-ECU Support** — Simultaneous communication with multiple ECUs
-- 🔧 **Full-Duplex Operation** — Concurrent send/receive with multi-threading
+| Standard    | Description                 |
+| ----------- | --------------------------- |
+| ISO 14229-1 | Unified Diagnostic Services |
+| ISO 14229-2 | Session Layer Services      |
+| ISO 15765-2 | DoCAN                       |
+| ISO 11898-1 | CAN Data Link Layer         |
+| ISO 11898-2 | CAN Physical Layer          |
 
 ---
 
-## 📊 Project Timeline
+# 🛠️ Technology Stack
 
-The project was executed across 5 structured phases over approximately 8 months:
-
-| Phase       | Duration | Focus                                              |
-| ----------- | -------- | -------------------------------------------------- |
-| **Phase 1** | Nov–Dec  | Learning & Foundation (UDS, ISO Standards, JavaFX) |
-| **Phase 2** | Dec–Jan  | Requirement Analysis & Feature Definition          |
-| **Phase 3** | Jan–Feb  | Architecture Design & Layered System Planning      |
-| **Phase 4** | Feb–Apr  | Core Implementation (All OSI Layers)               |
-| **Phase 5** | Apr–Jun  | Integration, Testing, Optimization & Documentation |
-
----
-
-## ⚠️ Important Notes
-
-1. **Source Code Availability**: This repository contains **documentation only**. The source code is closed-source and not publicly available.
-2. **Image References**: All figures are stored in `images/`. Ensure images are placed there before viewing section READMEs.
-3. **Standard Compliance**: All protocol implementations strictly follow ISO 14229 and ISO 15765 standards.
-4. **Hardware Requirements**: XDT requires a USB-to-CAN adapter (e.g., Vector VX1000, PCAN, Kvaser) for ECU communication.
+| Layer              | Technology           |
+| ------------------ | -------------------- |
+| Front-End          | JavaFX               |
+| UI Definition      | FXML                 |
+| Styling            | CSS                  |
+| Application Layer  | ISO 14229            |
+| Session Layer      | ISO 14229-2          |
+| Transport Layer    | ISO 15765-2          |
+| CAN Interface      | Python CAN           |
+| Gateway            | Py4J                 |
+| IDE                | Eclipse              |
+| Build System       | Maven / Gradle       |
+| Project Management | Jira, Git, Bitbucket |
 
 ---
 
-## 📖 How to Navigate This Documentation
+# 📊 Development Timeline
 
-1. **Start with `01-Introduction/`** for project motivation and UDS fundamentals
-2. **Proceed to `02-Project-Overview/`** for architecture and system design
-3. **Explore layer-specific directories (`03` through `06`)** for technical implementation details
-4. **Review `07-File-Parsing/`** for firmware format specifications
-5. **Check `08-Graphical-User-Interface/`** for UI/UX design decisions
-6. **See `09-Main-Features/`** for complete feature descriptions and workflows
-7. **Read `10-Challenges-and-Solutions/`** for development insights
-8. **Visit `11-Future-Work/`** for planned enhancements and roadmap
-
----
-
-## 📧 Contact & Acknowledgments
-
-For inquiries about this documentation or the XDT project, please contact the project team through the academic department.
-
-### Acknowledgments
-
-- **Prof. Neamat Abdel Kader** — For continuous support, invaluable insights, and guidance
-- **Eng. Islam Gamal** — For technical expertise, mentorship, and dedication
-- **Siemens DISW** — For sponsorship and industry collaboration
-- **Team Members** — For dedication, collaboration, and shared success
+| Phase   | Focus                   |
+| ------- | ----------------------- |
+| Phase 1 | Learning & Research     |
+| Phase 2 | Requirements Analysis   |
+| Phase 3 | Architecture Design     |
+| Phase 4 | Core Development        |
+| Phase 5 | Testing & Documentation |
 
 ---
 
-<p align="center">
-  <img src="images/logo-xdt.png" alt="XDT" width="100"/>
-</p>
+# 🎓 Academic Information
+
+| Field        | Details                                 |
+| ------------ | --------------------------------------- |
+| University   | Cairo University                        |
+| Faculty      | Faculty of Engineering                  |
+| Department   | Electronics & Electrical Communications |
+| Project Type | Graduation Project                      |
+| Sponsor      | Siemens DISW                            |
+| Supervisor   | Prof. Neamat Abdel Kader                |
+| Mentor       | Eng. Islam Gamal                        |
+
+---
+
+# 👥 Team Members
+
+* Karim Ayman Refaat
+* Gomaa Mohamed Gamal
+* Mohamed Ahmed Mohamed Ahmed
+* Mohamed Shawky
+* Janna Wael Ali Ali
+* Sohaila Mohamed Nasr
+* Reem Mohy Eldin Abdelrahman
+
+---
+
+# 🏅 Skills Demonstrated
+
+* Automotive Diagnostics (UDS)
+* CAN Communication
+* Protocol Stack Development
+* Layered Software Architecture
+* Java Desktop Development
+* ECU Flashing Mechanisms
+* Automotive Cybersecurity Concepts
+* XML Configuration Systems
+* Multi-threading
+* Software Testing & Validation
+
+---
+
+# 📖 Documentation Guide
+
+1. Start with **01-Introduction**
+2. Continue to **02-Project-Overview**
+3. Explore the protocol stack layers
+4. Review File Parsing and GUI sections
+5. Examine Features and Challenges
+6. Finish with Future Work and Appendix
+
+---
 
 
-<p align="center">
-  <strong>One Tool. All ECUs.</strong>
-</p>
+<div align="center">
 
+<img src="images/logo-xdt.png" width="90"/>
 
-<p align="center">
-  <sub>© 2025 Cairo University — Faculty of Engineering. All rights reserved.</sub>
-</p>
+## XDT — eXpert Diagnostic Tool
 
+### Professional Automotive Diagnostic Platform
+
+**One Tool. All ECUs.**
+
+© 2025 Cairo University – Faculty of Engineering
+
+</div>
