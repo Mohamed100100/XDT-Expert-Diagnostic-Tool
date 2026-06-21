@@ -4,14 +4,18 @@
 > *A Professional-Grade Automotive Diagnostic Platform*
 
 <p align="center">
-  <img src="images/logo-xdt.png" alt="XDT Logo" width="200"/>
+  <img src="images/logo-xdt.png" alt="XDT Logo" width="500"/>
 </p>
 
 
-<p align="center">
+<p align="left">
   <img src="images/logo-cairo-university.png" alt="Cairo University" width="300"/>
   &nbsp;&nbsp;&nbsp;
 
+</p>
+
+<p align="right">
+  <img src="images/logo-faculty-of-engineering.png" alt="Faculty of Engineering" width="150"/>
 </p>
 
 <p align="center">
