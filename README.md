@@ -328,6 +328,41 @@ XDT-Documentation/
 
 ---
 
+# 🙏 Acknowledgments
+
+Special thanks to:
+
+* **Prof. Neamat Abdel Kader**
+* **Eng. Islam Gamal**
+* **Siemens Digital Industries Software**
+* **Faculty of Engineering**
+
+for their continuous support, mentorship, and contributions throughout the project.
+
+---
+
+# 👥 Team Members
+Karim Ayman Refaat Gomaa
+📧 Karim.Gomaa01@eng-st.cu.edu.eg
+
+Reem Mohy Eldin Abdelrahman
+📧 reem.ahmed02@eng-st.cu.edu.eg
+
+Mohamed Gamal Mohamed Ahmed
+📧 muhammad.ahmed302@eng-st.cu.edu.eg
+
+Sohaila Mohammed Nasr
+📧 Suhaila.AbuShahba02@eng-st.cu.edu.eg
+
+Mohammed Ahmed Mohamed Shawky
+📧 mohamed.shawky02@eng-st.cu.edu.eg
+
+Jana Wael Ali Ali
+📧 Jana.ali02@eng-st.cu.edu.eg
+
+---
+
+
 
 <div align="center">
 
