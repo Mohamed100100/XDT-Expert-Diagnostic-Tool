@@ -9,9 +9,8 @@
 
 
 <p align="center">
-  <img src="images/logo-cairo-university.png" alt="Cairo University" width="150"/>
+  <img src="images/logo-cairo-university.png" alt="Cairo University" width="300"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="images/logo-faculty-of-engineering.png" alt="Faculty of Engineering" width="150"/>
   <img src="images/Simenslogo.png" alt="Simenslogo.png" width="300"/>
 
 </p>
