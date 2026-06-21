@@ -11,6 +11,10 @@
 <p align="center">
   <img src="images/logo-cairo-university.png" alt="Cairo University" width="300"/>
   &nbsp;&nbsp;&nbsp;
+
+</p>
+
+<p align="center">
   <img src="images/Simenslogo.png" alt="Simenslogo.png" width="300"/>
 
 </p>
