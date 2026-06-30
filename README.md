@@ -115,11 +115,11 @@ XDT provides a complete diagnostic ecosystem that enables engineers to:
 
 | Dashboard                                     | Diagnostic Console                                     |
 | --------------------------------------------- | ------------------------------------------------------ |
-| <img src="images/dashboard.png" width="450"/> | <img src="images/diagnostic-console.png" width="450"/> |
+| <img src="images/figure-69-home-page.png" width="450"/> | <img src="images/figure-82-general-request.png" width="450"/> |
 
 | ECU Configuration                              | Flashing Manager                             |
 | ---------------------------------------------- | -------------------------------------------- |
-| <img src="images/ecu-config.png" width="450"/> | <img src="images/flashing.png" width="450"/> |
+| <img src="images/figure-74-settings-interface.png" width="450"/> | <img src="images/figure-85-software-download-ui.png" width="450"/> |
 
 </div>
 
